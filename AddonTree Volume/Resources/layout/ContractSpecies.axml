@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/llConSP1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Cruise File:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_margin="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCruiseFileConSp" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_margin="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvFileNameConSp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/llConSp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="ContractSpecies:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_margin="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tvContractSpecies" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:inputType="textCapCharacters"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/txtConSpecies" />
+        <TextView
+            android:text="Prod:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_margin="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="0"
+            android:layout_height="match_parent"
+            android:id="@+id/tvConSpProd" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="0"
+            android:layout_height="match_parent"
+            android:inputType="textCapCharacters"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/txtConSpprod" />     
+        <Button
+            android:text="OK"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/btnConSpOk" />
+        <Button
+            android:text="CANCEL"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/btnConSpCancel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llHeaderSP"
+        android:background="@drawable/bgh">
+        <TextView
+            android:text=""
+            android:layout_margin="1dp"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:id="@+id/tvConSpSelectShowR" />
+        <TextView
+            android:text="Species"
+            android:layout_margin="1dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:id="@+id/tvConSpSpeciesShowR" />
+        <TextView
+            android:text="PrimaryProd"
+            android:layout_margin="1dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:id="@+id/tvConSpProdShowR" />
+        <TextView
+            android:text="FIACode"
+            android:layout_margin="1dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:id="@+id/tvConSpFIACodeShowR" />    
+        <TextView
+            android:text="ContractSpec"
+            android:layout_margin="1dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:id="@+id/tvConSpConSpeciesShowR" />
+    </LinearLayout>
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="1dp"
+        android:id="@+id/lvConSpTemp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/llConSpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    </LinearLayout>     
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+  <TextView
+       android:text="rVolType"
+       android:layout_margin="1dp"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_weight="1.5"
+       android:id="@+id/tvrVolTypeShow" /> 
+  <TextView
+        android:text="rSpecies"
+        android:layout_margin="1dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:id="@+id/tvrSpeciesShow" />
+    <TextView
+        android:text="rL/D"
+        android:layout_margin="1dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:id="@+id/tvrLiveDeadShow" />
+    <TextView
+        android:text="rProd"
+        android:layout_margin="1dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/tvrProdShow" />
+    <TextView
+        android:text="rMinDBH"
+        android:layout_margin="1dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:gravity="center"
+        android:id="@+id/tvrMinDBHShow" />
+    <TextView
+        android:text="rMaxDBH"
+        android:layout_margin="1dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:gravity="center"
+        android:id="@+id/tvrMaxDBHShow" />
+    <TextView
+        android:text="rModel"
+        android:layout_margin="1dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.3"
+        android:id="@+id/tvrModelShow" />
+</LinearLayout>

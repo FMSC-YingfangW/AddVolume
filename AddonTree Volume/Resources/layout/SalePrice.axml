@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/llSP1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Cruise File:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_margin="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCruiseFileSP" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_margin="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvFileNameSP" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llSP2">
+        <TextView
+            android:text="Sale Name:"
+            android:id="@+id/tvSaleNameSP"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="Sale Num:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tvSaleNumSP" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llSP3">
+        <TextView
+            android:text="ContractSpecies"
+            android:id="@+id/tvSpeciesSP"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="Product"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/tvProdSP" />
+        <TextView
+            android:text="Price ($/CCF)"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/tvPriceSP" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:theme="@android:style/Theme.DeviceDefault.Light"
+        android:id="@+id/llSP4">
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/spinner_background"
+            android:spinnerMode="dropdown"
+            android:dropDownWidth="match_parent"
+            android:textAlignment="textEnd"
+            android:prompt="@android:drawable/arrow_down_float"
+            android:id="@+id/spnSpecSP"
+            android:layout_marginRight="2dp" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="0"
+            android:layout_height="match_parent"
+            android:inputType="textCapCharacters"
+            android:textColor="@android:color/black"
+            android:background="@android:drawable/editbox_background"
+            android:id="@+id/txtSpeciesSP" />
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/spinner_background"
+            android:spinnerMode="dropdown"
+            android:dropDownWidth="match_parent"
+            android:textAlignment="textEnd"
+            android:prompt="@android:drawable/arrow_down_float"
+            android:id="@+id/spnProdSP"
+            android:layout_marginRight="2dp" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="0"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:textColor="@android:color/black"
+            android:background="@android:drawable/editbox_background"
+            android:id="@+id/txtProdSP" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="@android:color/black"
+            android:background="@android:drawable/editbox_background"
+            android:id="@+id/txtPriceSP" />
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:stretchColumns="0,1"
+        android:id="@+id/tableLayoutSP">
+        <TableRow
+            android:id="@+id/trBtnsSP"
+            android:layout_width="wrap_content">
+            <Button
+                android:id="@+id/btnExitSP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:layout_margin="1dp"
+                android:text="Exit/Back" />
+            <Button
+                android:id="@+id/btnSaveSP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:layout_margin="1dp"
+                android:text="Save" />
+            <Button
+                android:id="@+id/btnDeleteSP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:layout_margin="1dp"
+                android:text="Del" />
+            <Button
+                android:id="@+id/btnClearSP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:layout_margin="1dp"
+                android:text="Clr" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llHeaderSP"
+        android:background="@drawable/bgh">
+        <TextView
+            android:text="ContractSpecies"
+            android:layout_margin="1dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:id="@+id/tvSpSpeciesShowR" />
+        <TextView
+            android:text="Product"
+            android:layout_margin="1dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:id="@+id/tvSpProdShowR" />
+        <TextView
+            android:text="Price"
+            android:layout_margin="1dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:id="@+id/tvSpPriceShowR" />
+    </LinearLayout>
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="1dp"
+        android:id="@+id/lvSPTemp" />
+</LinearLayout>

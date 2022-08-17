@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:paddingBottom="3dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="3dp"
+    android:layout_height="40dp">
+    <TextView
+        android:text="ID"
+        android:layout_width="0dp"
+        android:layout_weight="0"
+        android:layout_height="match_parent"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/tvIdShow" />
+    <TextView
+        android:text="DBHclass"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:gravity="center"
+        android:id="@+id/tvDBHclassShow" />
+    <TextView
+        android:text="TreeCount"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:paddingRight="5dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_height="match_parent"
+        android:id="@+id/tvTreeCountShow" />
+    
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+  <TextView
+      android:text="ID"
+      android:layout_margin="1dp"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="0"
+      android:id="@+id/tvConSpIdShow" />
+  <CheckBox
+        android:text="Select"
+        android:layout_margin="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:id="@+id/tvConSpSelectShow" />
+  <TextView
+        android:text="Species"
+        android:layout_margin="1dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/tvConSpSpeciesShow" />
+    <TextView
+        android:text="PrimaryProduct"
+        android:layout_margin="1dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/tvConSpProdShow" />
+    <TextView
+        android:text="FIACode"
+        android:layout_margin="1dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/tvConSpFIACodeShow" />
+    <TextView
+        android:text="ContractSpecies"
+        android:layout_margin="1dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/tvConSpConSpeciesShow" />        
+</LinearLayout>
